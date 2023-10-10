@@ -1,0 +1,196 @@
+/* src/styles.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up a responsive container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header styles */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  /* Form styles */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Resume display styles */
+  #resumeDisplay {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #resumeDisplay h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  #resumeDisplay div {
+    margin-bottom: 20px;
+  }
+  
+  #resumeDisplay h3 {
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  #resumeDisplay p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Additional styles for the form elements */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  textarea {
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+  }
+  
+  /* Error message styles (customize as needed) */
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  /* ResumeDisplay.css */
+
+/* Overall container styles */
+#resumeDisplay {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Resume title styles */
+  #resumeDisplay h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Resume section styles */
+  .resume-section {
+    margin-bottom: 20px;
+  }
+  
+  /* Section title styles */
+  .resume-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Section content styles */
+  .resume-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Separate styles for skills section */
+  .resume-section.skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual skill styles */
+  .resume-section.skills .skill {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    #resumeDisplay h2 {
+      font-size: 24px;
+    }
+    .resume-section h3 {
+      font-size: 18px;
+    }
+    .resume-section p {
+      font-size: 14px;
+    }
+    /* Stack skills on smaller screens */
+    .resume-section.skills .skill {
+      margin-right: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+  }
+  

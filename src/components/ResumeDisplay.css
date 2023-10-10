@@ -1,0 +1,68 @@
+/* src/components/ResumeDisplay.css */
+.resume-display {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #007bff;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .resume-section {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  /* Add styles for print view */
+  @media print {
+    .resume-display {
+      background-color: #fff;
+      border: none;
+      box-shadow: none;
+      margin: 0;
+      page-break-before: always;
+    }
+  
+    h2 {
+      font-size: 20px;
+      margin: 10px 0;
+      text-align: center;
+      color: #007bff;
+      text-transform: uppercase;
+    }
+  
+    h3 {
+      font-size: 16px;
+      margin: 5px 0;
+      color: #333;
+    }
+  
+    .resume-section {
+      margin-bottom: 10px;
+      page-break-inside: avoid;
+    }
+  
+    p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  }
+  
